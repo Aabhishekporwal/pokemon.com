@@ -20,6 +20,7 @@ class Carousel extends React.Component {
         this.previousSlide = this.previousSlide.bind(this);
     }
     componentDidMount() {
+			// Service integration https://pokeapi.co/api/v2/pokemon/ditto/
 
         getPokemon().then(response => {
             this.setState({
